@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href='/staticFiles/main.css' />
+  </head>
+  <body>
+    <form method="GET" enctype="multipart/form-data" action="/save">
+      <input type="submit" value="Buscar Código Postal">
+  </form>
+    <h1>Datos Cargados</h1>
+ 
+{{ data_var|safe }}
+ 
+    </body>
+</html>
