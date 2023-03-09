@@ -17,8 +17,8 @@ Dentro de cada carpeta se tiene la siguiente estructura:
 -Al momento de leer el archivo csv se hace manejo de errores en caso que no encuentre archivo o el archivo que se lea sea otra extensión diferente a csv, desde la vista tambipen se controla que sólo se reciba archivos csv desde las opciones del formulario html.
 -Se crea en la base de datos la columna cod_postal pensando en el funcionamiento del microservicio2, ya que en el microservicio2 no se crea base de datos sino que se copia la instancia de la base de datos creada en el microservicio1
 -En el microservicio2 se hace manejo de error al momento de llamar la api, para facilitar el uso de la app, en caso de algún error al momento de hacer la petición a la API el arror se guarda como texto y se pone en la base dedatos en la columna cod_postal, por lo que si no encuentra codigo postal guardará el error generado y no se realiza manejo de nulos
--Dado a la gran cantidad de datos el microservicio2 puede demorarse un poco
--Se limita las peticiones a la api a través de la librería ratelimits, se parametriza 1 petición por segundo
+-Dado a la gran cantidad de datos el microservicio2 puede demorarse un poco.
+-Se limita las peticiones a la api a través de la librería ratelimits, se parametriza 1 petición por segundo.
 
 
 ## Mejoras
